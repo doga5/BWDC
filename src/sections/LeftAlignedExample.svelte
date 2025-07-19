@@ -7,34 +7,54 @@
 
     const series = [
         {
-            name: "Group 1",
+            name: "White",
             data: [
-                [1990, 3],
-                [2000, 4],
-                [2010, 1],
-                [2020, 1],
+                [2007, 18603],
+                [2010, 18028],
+                [2013, 22911],
+                [2016, 23557],
+                [2019, 26662],
+                [2022, 25000],
+                
             ],
-            color: "#8427c9",
+            color: "#F28D5A",
         },
         {
-            name: "Group 2",
+            name: "Hispanic",
             data: [
-                [1990, 2],
-                [2000, 5],
-                [2010, -2],
-                [2020, 2],
-            ],
-            color: "#ff99fc",
-        },
-        {
-            name: "Group 3",
-            data: [
-                [1990, 4],
-                [2000, 3],
-                [2010, 0],
-                [2020, 3],
+                [2007, 14310],
+                [2010, 15024],
+                [2013, 16547],
+                [2016, 22201],
+                [2019, 20402],
+                [2022, 13000],
             ],
             color: "#4096fa",
+        },
+        {
+            name: "Black",
+            data: [
+                [2007, 13165],
+                [2010, 17755],
+                [2013, 19092],
+                [2016, 24667],
+                [2019, 34776],
+                [2022, 26000],
+                
+            ],
+            color: "#5EA5D8",
+        },
+         {
+            name: "Other",
+            data: [
+                [2007, 14310],
+                [2010, 15024],
+                [2013, 20365],
+                [2016, 23434],
+                [2019, 22025],
+                [2022, 25000],
+            ],
+            color: "#994646",
         },
     ];
 
@@ -44,18 +64,67 @@
     let options = {
         chart: {
             type: "spline",
-            backgroundColor: "#e3ff00",
-            borderColor: "#007052",
-            borderWidth: 5,
-            borderRadius: 20,
+            backgroundColor: "#540023",
+            
+            
+
         },
         title: {
-            text: "Another Example Chart",
+            text: "Median Education Loans for Households",
+            style: {
+                color: "#F0BF56",
+                fontSize: "1.7em",
+                fontFamily: "Courier New, Courier, monospace",
+            },
         },
         subtitle: {
-            text: "With a subtitle! And styling!",
+            text: "by Race/Ethnicity",
+            style: {
+                color: "#F0BF56",
+                fontSize: "1.3em",
+                fontFamily: "Courier New, Courier, monospace",
+            },
         },
-        series: [series[0], series[1]],
+         xAxis: {
+        lineColor: "#F0BF56",
+        labels: {
+            style: {
+                color: "#F0BF56",
+                fontFamily: "Courier New, Courier, monospace",
+            }
+        },
+        title: {
+            style: {
+                color: "#F0BF56"
+            }
+        }
+    },
+    yAxis: {
+        gridLineColor: "#8c2b5a",
+        lineColor: "#F0BF56",
+        labels: {
+            style: {
+                color: "#F0BF56",
+                fontFamily: "Courier New, Courier, monospace",
+                
+            }
+        },
+        title: {
+            text: "U.S. Dolars",
+            style: {
+                color: "#F0BF56",
+                fontFamily: "Courier New, Courier, monospace",
+            }
+        }
+    },
+    legend: {
+    itemStyle: {
+        color: "#F0BF56", 
+        fontSize: "14px",
+        fontFamily: "Courier New, Courier, monospace",
+    }
+},
+        series: [series[0], series[1], series[2],series[3]],
     };
 
     function toggleThirdSeries() {
@@ -77,25 +146,27 @@
             <div class="chart">
                 <Chart bind:chart {options} highcharts={Highcharts} />
             </div>
-            <button on:click={toggleThirdSeries} class="toggle-button">
-                {thirdSeriesVisible ? "Remove Group 3" : "Add Group 3"}
-            </button>
+           
             <div>
-                <p>
-                    You can use Svelte to add and remove data from a Highcharts
-                    chart.
+            
+                <p class="chart-description"> 
+                    Click the labels to see the data for a specific race/ethnicity.
+    
                 </p>
-                <p>
-                    When you click the button above, a third group is toggled in
-                    the chart. Check out the source code to see how it's done.
-                </p>
-                <p>
-                    <strong
-                        >🤔 How might you use other HTML elements, like
-                        checkboxes or radio buttons, in a similar way to filter
-                        data?</strong
-                    >
-                </p>
+                <style >
+                    .chart-description {
+                        color: #f8edf2;
+                        font-size: 1em;
+                        margin-top: 1.5rem;
+                        text-align: center;
+                        font-family: "Courier New", Courier, monospace;
+                        border: 1px dotted #F0BF56;
+                        padding: 1rem;
+                        border-radius: 15px;
+                    }
+
+                </style>
+               
             </div>
         {/snippet}
 
@@ -128,25 +199,10 @@
 
 <style>
     .chart {
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
+        
     }
 
-    .toggle-button {
-        margin: 20px;
-        padding: 20px;
-        color: #007052;
-        background-color: #0bd956;
-        border: solid 2px #007052;
-        border-radius: 16px;
-        font-size: large;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        box-shadow: 0 4px 0 #007052;
-    }
-
-    .toggle-button:active {
-        transform: translateY(2px);
-        box-shadow: 0 2px 0 #007052;
-    }
+   
 </style>

@@ -1,145 +1,139 @@
 <script>
-    import * as Highcharts from "highcharts";
-    import "highcharts/modules/exporting";
-    import { Chart } from "@highcharts/svelte";
-    import Scroller from "../lib/Scroller.svelte";
-    import ArticleText from "../lib/ArticleText.svelte";
+  import * as Highcharts from "highcharts";
+  import "highcharts/modules/exporting";
+  import { Chart } from "@highcharts/svelte";
+  import Scroller from "../lib/Scroller.svelte";
+  import ArticleText from "../lib/ArticleText.svelte";
 
-    let options = {
+  const options = {
         chart: {
-            type: "pie",
+            type: "column",
+            backgroundColor: "#540023"
         },
         title: {
-            text: "An Example Pie Chart",
+            text: "Undergradute Enrollment Rates",
+            style: {
+                color: "#F0BF56",
+                fontSize: "1.7em",
+                fontFamily: "Courier New, Courier, monospace",
+            }
+        },
+        
+        xAxis: {
+            categories: ["Asian", "Black", "Hispanic", "White"],
+            crosshair: true,
+            labels: {
+                style: {
+                    color: "#F0BF56",
+                    fontSize: "14px"
+                }
+            }
+        },
+
+         subtitle: {
+            text: "by Race/Ethnicity",
+            style: {
+                color: "#F0BF56",
+                fontSize: "1.3em",
+                fontFamily: "Courier New, Courier, monospace",
+            },
+        },
+
+        yAxis: {
+            min: 0,
+            lineColor: "#F0BF56",
+            title: {
+                text: null
+            },
+            labels: {
+                format: "{value}%",
+                style: {
+                    color: "#F0BF56"
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: '%'
         },
         plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                dataLabels: [
-                    {
-                        enabled: true,
-                        distance: 20,
-                    },
-                    {
-                        enabled: true,
-                        distance: -40,
-                        format: "{point.percentage:.1f}%",
-                        style: {
-                            fontSize: "1.2em",
-                            textOutline: "none",
-                        },
-                        filter: {
-                            operator: ">",
-                            property: "percentage",
-                            value: 10,
-                        },
-                    },
-                ],
-            },
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
         },
         series: [
             {
-                name: "Group",
-                data: [
-                    {
-                        name: "Group 1",
-                        y: 151,
-                    },
-                    {
-                        name: "Group 2",
-                        sliced: true,
-                        selected: true,
-                        y: 180,
-                    },
-                    {
-                        name: "Group 3",
-                        y: 32,
-                    },
-                    {
-                        name: "Group 4",
-                        y: 103,
-                    },
-                    {
-                        name: "Group 5",
-                        y: 77,
-                    },
-                ],
+                name: "2016",
+                data: [8.4, 7.7, 6.5, 5.7],
+                color: "#F28D5A"
             },
+            {
+                name: "2023",
+                data: [6.9, 6.1, 5.9, 4.8],
+                color: "#4096fa"
+            }
         ],
+         legend: {
+    itemStyle: {
+        color: "#F0BF56", 
+        fontSize: "14px",
+        fontFamily: "Courier New, Courier, monospace",
+    }
+},
     };
 </script>
 
+
+
 <div>
-    <Scroller layout="right">
-        {#snippet sticky()}
-            <div class="chart">
-                <Chart {options} highcharts={Highcharts} />
-            </div>
-            <p>
-                Here's an example chart using
-                <a href="https://www.highcharts.com/">Highcharts</a>!
-            </p>
-            <p>
-                📈 <strong>Highcharts</strong> is a super-flexible library for
-                creating all kinds of charts. See demos of different chart types
-                <a href="https://www.highcharts.com/demo">here</a>.
-            </p>
-            <p>
-                Since we're using Highcharts through Svelte, the syntax is a
-                little different from what you might see in the demos. But all
-                of Highcharts' functionality is available through the Highcharts
-                for Svelte package.
-            </p>
-            <p>
-                The configuration is done through the
-                <code>options</code> json object passed to the chart, which you'll
-                see in the source code for this template.
-            </p>
-            <p>
-                Use the
-                <a href="https://api.highcharts.com/highcharts/"
-                    >API reference</a
-                >
-                to understand what each element in the <code>options</code> object
-                does.
-            </p>
-        {/snippet}
+  <Scroller layout="right">
+    {#snippet sticky()}
+      <div class="chart">
+        <Chart {options} highcharts={Highcharts} />
+      </div>
+      
+        
+      <p>
+        Use the
+        <a href="https://api.highcharts.com/highcharts/">API reference</a>
+        to understand what each element in the <code>options</code> object does.
+      </p>
+    {/snippet}
 
-        {#snippet scrolly()}
-            <ArticleText>
-                <strong>Welcome to the KWK Data Scrollytelling Template!</strong
-                >
-            </ArticleText>
+    {#snippet scrolly()}
+      <ArticleText>
+        <strong>Welcome to the KWK Data Scrollytelling Template!</strong>
+      </ArticleText>
 
-            <ArticleText>
-                This is a <strong>basic example</strong> of how you might create
-                a scrollytelling piece using Svelte and Highcharts.
-            </ArticleText>
+      <ArticleText>
+        This is a <strong>basic example</strong> of how you might create a scrollytelling
+        piece using Svelte and Highcharts.
+      </ArticleText>
 
-            <ArticleText>
-                You can use this template as a <strong>starting point</strong>
-                for your project.
-                <br /><br />
-                Or, if you want to build something from scratch, you can use it as
-                a <strong>reference</strong> for specific functionality.
-            </ArticleText>
+      <ArticleText>
+        You can use this template as a <strong>starting point</strong>
+        for your project.
+        <br /><br />
+        Or, if you want to build something from scratch, you can use it as a
+        <strong>reference</strong> for specific functionality.
+      </ArticleText>
 
-            <ArticleText>
-                This is <strong>just one way</strong> that scrollytelling can
-                look.
-                <br /><br />
-                <strong>
-                    If you use this template, be sure to modify it and make it
-                    your own!
-                </strong>
-            </ArticleText>
-        {/snippet}
-    </Scroller>
+      <ArticleText>
+        This is <strong>just one way</strong> that scrollytelling can look.
+        <br /><br />
+        <strong>
+          If you use this template, be sure to modify it and make it your own!
+        </strong>
+      </ArticleText>
+    {/snippet}
+  </Scroller>
 </div>
 
 <style>
-    .chart {
-        width: 90%;
-        margin: 0px auto;
-    }
+  .chart {
+    width: 100%;
+    margin: 0px auto;
+    
+  }
 </style>
