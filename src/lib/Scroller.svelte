@@ -23,7 +23,7 @@
         padding: min(100vh, 10rem) 1rem;
         border-style: solid;
         border-color: #540023;
-       background-image: image-set(url('Backg.png') 13x);  
+        background-image: image-set(url('Backg.png') 12x);  
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -48,7 +48,7 @@
     .scrolly {
         display: flex;
         flex-direction: column;
-        flex: 1 1; /* Allows growing, shrinking */
+        flex: 1 1; 
     }
 
     .sticky {
@@ -76,7 +76,7 @@
         .scrolly {
             flex: 1 1 auto;
             min-width: 100%;
-            position: static; /* remove sticky on mobile */
+            position: static; 
             transform: none;
         }
 
