@@ -1,22 +1,13 @@
-# KWK Scrollytelling template
+# Degrees of Inequality
 
-This template is a starting point / example of how to create a scrollytelling piece using Svelte and Highcharts! 
+This project aims to explore the non-changing levels of racial wealth gap, even with increasing numbers of Bachelor's degree attainment by Black Americans.
 
-## Demo
-See a live demo of the page [here](https://jasminesamra.github.io/kwk-scrollytelling-template/)!
+## Technical Information
 
-## Recommended IDE Setup
+The website was built using Svelte and Vite 'from scratch' in order to get a deeper understanding of modern web development.
+Through this project, I became more confident with Git, GitHub, Vite, and integrating Svelte libraries.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+## Credits
+Repo created using vite (`npm create vite@6`). The illustration was drawn by me, taking the work "Vozes Negras" by Luciano Cian as reference. All data sources are cited in the text with links to the original websites. ChatGPT was used when I got stuck: 1) I couldn't add 3 pie charts next to each other. 2) The background image was not getting built. 2) Got some ideas about the order of the data and commenting on graphs.
 
-## How to clone the repo
-On this repo's homepage in GitHub, click the `Use this template` button. Select the option to create a new repository. This will create a new repo under your GitHub account.
-
-Navigate to your new copy of this template in your GitHub profile. 
-
-Clone your new repo locally and `cd` into it. 
-
-Run `npm install` and then `npm run dev` to spin up the project locally. Then, start making changes! You can use this repo as a starting point for your own final project or simply as an example. 
-
-## Credit
-Repo created using vite (`npm create vite@6`)
+Got the icons from Font Awesome and the fonts from Google Fonts.
