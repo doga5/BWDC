@@ -1,6 +1,9 @@
 <script>
   let { title, subtitle } = $props();
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
 
 <div class="title-card">
   <div class="content">
@@ -14,14 +17,15 @@
 <style>
   .title-card {
     background-color: #540023;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: left;
     align-items: left;
     text-align: left;
-    padding: 3rem;
+    padding: 2.5rem;
     box-sizing: border-box;
-    font-family: monaco, monospace;
+    font-family: "Geo", sans-serif;
+    font-style: normal;
   }
   .duck-img {
     position: absolute;
@@ -50,18 +54,20 @@
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 8rem;
     margin: 0;
+    box-sizing: border-box;
+    width: 10%;
     color: #F0BF56;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     max-width: 700px;
-    font-family: monospace, fantasy;
+    font-family: "Jersey 15", sans-serif;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #f7f5eb;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   .name {
     border-bottom: #F0BF56 2px solid;

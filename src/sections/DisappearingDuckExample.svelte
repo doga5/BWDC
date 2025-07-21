@@ -15,10 +15,10 @@
 
             if (entry.intersectionRatio >= 0.9) {
                 // "active" state
-                elem.style.backgroundColor = "#e3ff00";
+                elem.style.opacity = 1;
             } else if (entry.intersectionRatio < 0.9) {
                 // "inactive" state
-                elem.style.backgroundColor = "#888888";
+                elem.style.opacity = 0.25;
             }
         });
     };
@@ -28,10 +28,10 @@
             const elem = entry.target;
 
             if (entry.intersectionRatio >= 0.9) {
-                elem.style.backgroundColor = "#e3ff00";
+                elem.style.opacity = 1;
                 duckIsVisible = true;
             } else if (entry.intersectionRatio < 0.9) {
-                elem.style.backgroundColor = "#888888";
+                 elem.style.opacity = 0.25;
             }
         });
     };
@@ -41,10 +41,10 @@
             const elem = entry.target;
 
             if (entry.intersectionRatio >= 0.9) {
-                elem.style.backgroundColor = "#e3ff00";
+                elem.style.opacity = 1;
                 duckIsVisible = false;
             } else if (entry.intersectionRatio < 0.9) {
-                elem.style.backgroundColor = "#888888";
+                 elem.style.opacity = 0.25;
             }
         });
     };
@@ -69,68 +69,35 @@
 
         {#snippet scrolly()}
             <ObservedArticleText callback={removeDuckCallback} {options}>
-                This example shows how to use an Intersection Observer callback
-                along with a <a href="https://svelte.dev/docs/svelte/transition"
-                    >Svelte transition.</a
-                >
-                <br /><br />
-                Svelte transitions are built-in, easy to use animations that elevate
-                the user experience as elements change on the website. Try them out
-                in the tutorial
-                <a href="https://svelte.dev/tutorial/svelte/transition">here</a>
-                (and the next few pages).
-                <br /><br />
-                You can also
-                <a
-                    href="https://svelte.dev/tutorial/svelte/custom-css-transitions"
-                >
-                    build your own transitions
-                </a> (it's not as hard as you think!).
+                A study conducted by NBER further investigated the occupational segregation by race and education over time.
+                They examined whether occupational segregation between Black and White workers is similar in magnitude among
+                workers with a Bachelor’s degree as it is among workers who do not have a Bachelor’s degree.
+                <br />
+                <br />
+                 Hypothesis was that observed racial occupational segregation is greater than it would be if workers were randomly
+distributed in the labor market.
+                <br />
             </ObservedArticleText>
 
             <ObservedArticleText callback={showDuckCallback} {options}>
-                When this box scrolls into view, the callback will set a boolean
-                variable, <code>duckIsVisible</code> to
-                <code>true</code>.
-                <br /><br />
-                Because <code>duckIsVisible</code> is declared as
-                <a href="https://svelte.dev/tutorial/svelte/state"> state</a>
-                , and the duck image is only rendered conditionally if
-                <code>duckIsVisible==true</code>, Svelte automatically updates
-                the page and adds the duck component.
-                <br /><br />
-                The svelte transition
-                <code>{"in:fly={{ y: 200, duration: 2000 }}"}</code>
-                handles <strong>animating</strong> the transition.
+                The anylisis revealed that segregation between Black and White workers holding a Bachelor’s degree is
+                similar to segregation between Black and White workers without a Bachelor’s degree with magnitude of rougly 0.28 (meaning 28% of workers would need to change
+occupations for these two groups to be evenly distributed across all occupations).
             </ObservedArticleText>
 
             <ObservedArticleText callback={removeDuckCallback} {options}>
-                When this box scrolls into view, the callback will set
-                <code>duckIsVisible</code> to <code>false</code>.
-                <br /><br />
-                Svelte then automatically updates the page (more precisely, the DOM)
-                and removes the duck component.
-                <br /><br />
-                The Svelte transition
-                <code>{"out:fade"}</code>
-                handles animating the transition.
+                Regardless of educational attainment, considerable occupational
+segregation between Black and white workers persists. Even as college attendance has increased
+among Black Americans, the observed distribution of occupations to which Black workers have
+access significantly deviates from what would be expected in a race-neutral labor market. 
+                <br />
+                <br />
+                This suggests that the labor market remains influenced by systemic factors that limit opportunities for Black workers, even among those with higher education.
             </ObservedArticleText>
 
-            <ObservedArticleText callback={simpleCallback} {options}>
-                Pretty slick, huh?
-                <br /><br />
-                🤔
-                <strong
-                    >How might you use a transition like this for emotional
-                    impact in your final project?</strong
-                >
-            </ObservedArticleText>
+        
         {/snippet}
     </Scroller>
 </div>
 
-<style>
-    .duck-img {
-        margin: 0px auto;
-    }
-</style>
+

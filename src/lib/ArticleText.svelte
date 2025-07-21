@@ -11,7 +11,7 @@
 <style>
     .article-text {
         margin: 50vh auto;
-        width: 60%;
+        width: 50%;
         background-color: #f8edf2;
         color: #23000f;
         padding: 20px;

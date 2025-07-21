@@ -9,12 +9,12 @@
         {
             name: "White",
             data: [
-                [2007, 18603],
-                [2010, 18028],
-                [2013, 22911],
-                [2016, 23557],
-                [2019, 26662],
-                [2022, 25000],
+    
+                [2010, 67380],
+                [2013, 65000],
+                [2016, 67760],
+                [2019, 70660],
+                [2022, 71650],
                 
             ],
             color: "#F28D5A",
@@ -22,39 +22,38 @@
         {
             name: "Hispanic",
             data: [
-                [2007, 14310],
-                [2010, 15024],
-                [2013, 16547],
-                [2016, 22201],
-                [2019, 20402],
-                [2022, 13000],
+                [2010, 60220],
+                [2013, 58780],
+                [2016, 61530],
+                [2019, 58320],
+                [2022, 60200],
             ],
-            color: "#4096fa",
+            color: "#994646",
         },
         {
             name: "Black",
             data: [
-                [2007, 13165],
-                [2010, 17755],
-                [2013, 19092],
-                [2016, 24667],
-                [2019, 34776],
-                [2022, 26000],
+    
+                [2010, 56120],
+                [2013, 57420],
+                [2016, 62000],
+                [2019, 55060],
+                [2022, 61150],
                 
             ],
             color: "#5EA5D8",
         },
          {
-            name: "Other",
+            name: "Asian",
             data: [
-                [2007, 14310],
-                [2010, 15024],
-                [2013, 20365],
-                [2016, 23434],
-                [2019, 22025],
-                [2022, 25000],
+        
+                [2010, 80910],
+                [2013, 77410],
+                [2016, 85580],
+                [2019, 85150],
+                [2022, 91130],
             ],
-            color: "#994646",
+            color: "#4096fa",
         },
     ];
 
@@ -70,7 +69,7 @@
 
         },
         title: {
-            text: "Median Education Loans for Households",
+            text: "Median Annnual Earnings for Full-Time Workers",
             style: {
                 color: "#F0BF56",
                 fontSize: "1.7em",
@@ -78,7 +77,7 @@
             },
         },
         subtitle: {
-            text: "by Race/Ethnicity",
+            text: "(25-34 years old, Bachelor's degree or higher)",
             style: {
                 color: "#F0BF56",
                 fontSize: "1.3em",
@@ -171,19 +170,26 @@
         {/snippet}
 
         {#snippet scrolly()}
-        <ArticleText>
-            The <strong>education debt</strong> for students in the U.S. has been a <strong>continuing concern</strong>, 
-            increasing steadily over the years.
-        </ArticleText>
+    
 
             <ArticleText>
-                <strong>Black households</strong>, in particular, have historically carried the 
-                <strong>highest median education debt</strong>, peaking around $35,000 in 2019, 
-                significantly above the levels of other groups.
+                And yet, the <strong>benefits</strong> of a college education 
+                are <strong>not equally distributed</strong> across different racial and ethnic groups. 
+                
             </ArticleText>
 
-            
-
+            <ArticleText>
+                The <a href="https://blackwealthdata.org/explore/employment#EMP-01">data</a> shows that 
+                <strong>median annual earnings vary significantly among newly graduates</strong>.
+                Black workers earn roughly $61,000 per year, $10,000 less than White workers and $30,000 less than their Asian peers.
+                
+             </ArticleText>
+             <ArticleText>
+                Despite holding the <strong>same level of education</strong>, young Black workers consistently earn less than their White and Asian peers.
+                These persistent wage gaps suggest that <strong>a college degree alone is not enough to close racial income disparities</strong>, 
+                pointing to deeper inequalities in the labor market.
+                
+            </ArticleText>
             
         {/snippet}
     </Scroller>

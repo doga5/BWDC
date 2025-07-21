@@ -6,85 +6,83 @@
   import ArticleText from "../lib/ArticleText.svelte";
 
   const options = {
-        chart: {
-            type: "column",
-            backgroundColor: "#540023"
-        },
-        title: {
-            text: "Undergradute Enrollment Rates",
-            style: {
-                color: "#F0BF56",
-                fontSize: "1.7em",
-                fontFamily: "Courier New, Courier, monospace",
-            }
-        },
-        
-        xAxis: {
-            categories: ["Asian", "Black", "Hispanic", "White"],
-            crosshair: true,
-            labels: {
-                style: {
-                    color: "#F0BF56",
-                    fontSize: "14px"
-                }
-            }
-        },
+    chart: {
+      type: "column",
+      backgroundColor: "#540023",
+    },
+    title: {
+      text: "Undergradute Enrollment Rates",
+      style: {
+        color: "#F0BF56",
+        fontSize: "1.7em",
+        fontFamily: "Courier New, Courier, monospace",
+      },
+    },
 
-         subtitle: {
-            text: "by Race/Ethnicity",
-            style: {
-                color: "#F0BF56",
-                fontSize: "1.3em",
-                fontFamily: "Courier New, Courier, monospace",
-            },
+    xAxis: {
+      categories: ["Asian", "Black", "Hispanic", "White"],
+      crosshair: true,
+      labels: {
+        style: {
+          color: "#F0BF56",
+          fontSize: "14px",
         },
+      },
+    },
 
-        yAxis: {
-            min: 0,
-            lineColor: "#F0BF56",
-            title: {
-                text: null
-            },
-            labels: {
-                format: "{value}%",
-                style: {
-                    color: "#F0BF56"
-                }
-            }
+    subtitle: {
+      text: "by Race/Ethnicity",
+      style: {
+        color: "#F0BF56",
+        fontSize: "1.3em",
+        fontFamily: "Courier New, Courier, monospace",
+      },
+    },
+
+    yAxis: {
+      min: 0,
+      lineColor: "#F0BF56",
+      title: {
+        text: null,
+      },
+      labels: {
+        format: "{value}%",
+        style: {
+          color: "#F0BF56",
         },
-        tooltip: {
-            shared: true,
-            valueSuffix: '%'
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [
-            {
-                name: "2016",
-                data: [8.4, 7.7, 6.5, 5.7],
-                color: "#F28D5A"
-            },
-            {
-                name: "2023",
-                data: [6.9, 6.1, 5.9, 4.8],
-                color: "#4096fa"
-            }
-        ],
-         legend: {
-    itemStyle: {
-        color: "#F0BF56", 
+      },
+    },
+    tooltip: {
+      shared: true,
+      valueSuffix: "%",
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0,
+      },
+    },
+    series: [
+      {
+        name: "2016",
+        data: [8.4, 7.7, 6.5, 5.7],
+        color: "#F28D5A",
+      },
+      {
+        name: "2023",
+        data: [6.9, 6.1, 5.9, 4.8],
+        color: "#4096fa",
+      },
+    ],
+    legend: {
+      itemStyle: {
+        color: "#F0BF56",
         fontSize: "14px",
         fontFamily: "Courier New, Courier, monospace",
-    }
-},
-    };
+      },
+    },
+  };
 </script>
-
-
 
 <div>
   <Scroller layout="right">
@@ -92,40 +90,32 @@
       <div class="chart">
         <Chart {options} highcharts={Highcharts} />
       </div>
+
       
-        
-      <p>
-        Use the
-        <a href="https://api.highcharts.com/highcharts/">API reference</a>
-        to understand what each element in the <code>options</code> object does.
-      </p>
     {/snippet}
 
     {#snippet scrolly()}
       <ArticleText>
-        <strong>Welcome to the KWK Data Scrollytelling Template!</strong>
+       Each year, <strong>millions of students </strong> enroll in colleges and universities across the <strong>United States</strong>,
+        seeking to improve their lives and those of their families. Defiying the odds, they work hard to earn a degree with the promises of <strong>a better job and a brighter future.</strong> 
+                
       </ArticleText>
 
       <ArticleText>
-        This is a <strong>basic example</strong> of how you might create a scrollytelling
-        piece using Svelte and Highcharts.
+       The data obtained form <a href="https://blackwealthdata.org/explore/education"> BWDC </a> shows that, the undergraduate enrollment rates for <strong>Asian</strong> and <strong>Black</strong> 
+      students have been consistently <strong>higher</strong> than those for <strong>White</strong> and <strong>Hispanic</strong> students. 
       </ArticleText>
 
-      <ArticleText>
-        You can use this template as a <strong>starting point</strong>
-        for your project.
-        <br /><br />
-        Or, if you want to build something from scratch, you can use it as a
-        <strong>reference</strong> for specific functionality.
-      </ArticleText>
 
       <ArticleText>
-        This is <strong>just one way</strong> that scrollytelling can look.
-        <br /><br />
-        <strong>
-          If you use this template, be sure to modify it and make it your own!
-        </strong>
+        On the other hand, undergraduate enrollment is <strong>shrinking for all groups</strong>, which could reflect rising tuition costs, economic instability, 
+        or <strong>growing doubts about whether a degree guarantees better income</strong>, especially for students of color.
+                
       </ArticleText>
+
+    
+
+      
     {/snippet}
   </Scroller>
 </div>
@@ -134,6 +124,5 @@
   .chart {
     width: 100%;
     margin: 0px auto;
-    
   }
 </style>

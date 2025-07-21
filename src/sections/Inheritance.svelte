@@ -24,7 +24,7 @@
           color: "#5EA5D8" 
         },
         { name: "Did Not Receive", y: 89.8,
-          color: "#994646"
+          color: "#F28D5A"
          }
       ]
     }]
@@ -50,7 +50,7 @@
           color: "#5EA5D8" 
          },
         { name: "Did Not Receive", y: 92.0,
-          color: "#994646"
+          color: "#F28D5A"
          }
       ]
     }]
@@ -74,7 +74,7 @@
           color: "#5EA5D8" 
          },
         { name: "Did Not Receive", y: 82.8,
-          color: "#994646"
+          color: "#F28D5A"
          }
       ]
     }]
@@ -100,18 +100,16 @@
 
     {#snippet scrolly()}
       <ArticleText>
-        <strong>Welcome to the KWK Data Scrollytelling Template!</strong>
+        For those who do enroll, family support plays a <strong>crucial role</strong>. Yet <a href="https://blackwealthdata.org/explore/assets"> data </a> shows that Black and Hispanic students are significantly 
+        <strong>less likely to receive financial</strong> help with tuition compared to their White peers.
       </ArticleText>
       <ArticleText>
-        This is a <strong>basic example</strong> of how you might create a scrollytelling
-        piece using Svelte and Highcharts.
+        This <strong>limits</strong> their financial flexibility during and after college, moreover, causes them to heavily rely on student loans, which can lead to <strong>long-term debt</strong>.
       </ArticleText>
-      <ArticleText>
-        You can use this template as a <strong>starting point</strong> for your project.
+      <ArticleText> 
+        The result is <strong>unequal starting points</strong>, even when degree attainment is the same.
       </ArticleText>
-      <ArticleText>
-        <strong>Make it your own!</strong>
-      </ArticleText>
+      
     {/snippet}
   </Scroller>
 </div>
@@ -137,6 +135,10 @@
     font-family: "Courier New", Courier, monospace;
     text-align: center;
     margin: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    
+    
     
   }
 

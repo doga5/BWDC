@@ -17,7 +17,7 @@
 <style>
     .wrapper {
         background-color: #540023;
-        padding: min(100vh, 30rem) 1rem;
+        padding: min(100vh, 10rem) 1rem;
         border-style: solid;
         border-color: #540023;
         display: flex;

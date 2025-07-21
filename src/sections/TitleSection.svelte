@@ -1,8 +1,8 @@
 <script>
     import TitleCard from "../lib/TitleCard.svelte";
     
-    const title = "TITLE TITLE TITLE";
-    const subtitle = "A journey through data, creativity, and code";
+    const title = "DEGREES OF INEQUALITY";
+    const subtitle = "Why College Isn’t Closing the Racial Wealth Gap for Workers";
     
 </script>
 
