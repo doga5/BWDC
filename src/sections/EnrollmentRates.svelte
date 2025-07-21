@@ -97,12 +97,12 @@
     {#snippet scrolly()}
       <ArticleText>
        Each year, <strong>millions of students </strong> enroll in colleges and universities across the <strong>United States</strong>,
-        seeking to improve their lives and those of their families. Defiying the odds, they work hard to earn a degree with the promises of <strong>a better job and a brighter future.</strong> 
+        seeking to improve their lives and those of their families. Defying the odds, they work hard to earn a degree with the promises of <strong>a better job and a brighter future.</strong> 
                 
       </ArticleText>
 
       <ArticleText>
-       The data obtained form <a href="https://blackwealthdata.org/explore/education"> BWDC </a> shows that, the undergraduate enrollment rates for <strong>Asian</strong> and <strong>Black</strong> 
+       The data obtained from <a href="https://blackwealthdata.org/explore/education"> BWDC </a> indicates that the undergraduate enrollment rates for <strong>Asian</strong> and <strong>Black</strong> 
       students have been consistently <strong>higher</strong> than those for <strong>White</strong> and <strong>Hispanic</strong> students. 
       </ArticleText>
 
@@ -125,4 +125,12 @@
     width: 100%;
     margin: 0px auto;
   }
+
+
+@media (max-width: 600px) {
+  .chart {
+    width: 100%;
+    margin: 0px auto;
+  }
+}
 </style>

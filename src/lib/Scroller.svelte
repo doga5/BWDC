@@ -23,7 +23,7 @@
         padding: min(100vh, 10rem) 1rem;
         border-style: solid;
         border-color: #540023;
-       background-image: image-set(url('Backg.png') 1.5x);  
+       background-image: image-set(url('Backg.png') 13x);  
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

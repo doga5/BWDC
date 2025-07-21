@@ -7,7 +7,7 @@
   import ArticleText from "../lib/ArticleText.svelte";
 
   const pieOptions1: Options = {
-    chart: { type: "pie", backgroundColor: "#540023" },
+    chart: { type: "pie", backgroundColor: "transparent" },
     title: { 
       text: "Black" ,
     style: {
@@ -31,7 +31,7 @@
   };
 
   const pieOptions2: Options = {
-    chart: { type: "pie", backgroundColor: "#540023" },
+    chart: { type: "pie", backgroundColor: "transparent" },
     title: { 
       text: "Hispanic",
       style: {
@@ -57,7 +57,7 @@
   };
 
   const pieOptions3: Options = {
-    chart: { type: "pie", backgroundColor: "#540023" },
+    chart: { type: "pie", backgroundColor: "transparent" },
     title: { 
       text: "White" ,
     style: {
@@ -93,7 +93,7 @@
     <div class="chart"><Chart options={pieOptions3} highcharts={Highcharts} /></div>
   </div>
   <p class=title>
-        Percent of 18-28 Years Olds who Received Help Paying Tuition
+        Percentage of 18-28 Years Olds who Received Help Paying Tuition
       </p>
 
     {/snippet}
@@ -104,7 +104,7 @@
         <strong>less likely to receive financial</strong> help with tuition compared to their White peers.
       </ArticleText>
       <ArticleText>
-        This <strong>limits</strong> their financial flexibility during and after college, moreover, causes them to heavily rely on student loans, which can lead to <strong>long-term debt</strong>.
+        This <strong>limits</strong> their financial flexibility during and after college; moreover, it causes them to heavily rely on student loans, which can lead to <strong>long-term debt</strong>.
       </ArticleText>
       <ArticleText> 
         The result is <strong>unequal starting points</strong>, even when degree attainment is the same.

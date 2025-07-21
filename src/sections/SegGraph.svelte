@@ -86,14 +86,14 @@
                 workers with a Bachelor’s degree as it is among workers who do not have a Bachelor’s degree.
                 <br />
                 <br />
-                 Hypothesis was that observed racial occupational segregation is <strong>greater than it would be</strong> if workers were randomly
+                 The hypothesis was that observed racial occupational segregation is <strong>greater than it would be</strong> if workers were randomly
 distributed in the labor market.
                 <br />
             </ObservedArticleText>
 
             <ObservedArticleText callback={showDuckCallback} {options}>
-                The anylisis revealed that <strong>segregation between Black and White workers holding a Bachelor’s degree is
-                similar to segregation between Black and White workers without a Bachelor’s degree</strong> with magnitude of rougly 0.28 (meaning 28% of workers would need to change
+                The analysis revealed that <strong>segregation between Black and White workers holding a Bachelor’s degree is
+                similar to segregation between Black and White workers without a Bachelor’s degree</strong>, with a magnitude of roughly 0.28 (meaning 28% of workers would need to change
 occupations for these two groups to be evenly distributed across all occupations).
             </ObservedArticleText>
 

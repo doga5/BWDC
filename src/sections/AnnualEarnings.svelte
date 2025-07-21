@@ -99,7 +99,7 @@
         }
     },
     yAxis: {
-        gridLineColor: "#8c2b5a",
+        gridLineColor: "#24000f",
         lineColor: "#F0BF56",
         labels: {
             style: {
@@ -179,8 +179,8 @@
             </ArticleText>
 
             <ArticleText>
-                The <a href="https://blackwealthdata.org/explore/employment#EMP-01">data</a> shows that 
-                <strong>median annual earnings vary significantly among newly graduates</strong>.
+                The <a href="https://blackwealthdata.org/explore/employment#EMP-01">data</a> show that 
+                <strong>median annual earnings vary significantly among newly graduated workers</strong>.
                 Black workers earn roughly $61,000 per year, $10,000 less than White workers and $30,000 less than their Asian peers.
                 
              </ArticleText>

@@ -100,7 +100,7 @@
         }
     },
     yAxis: {
-        gridLineColor: "#8c2b5a",
+        gridLineColor: "#24000f",
         lineColor: "#F0BF56",
         labels: {
             style: {
@@ -172,7 +172,7 @@
 
         {#snippet scrolly()}
         <ArticleText>
-            The <strong>education debt</strong> for students in the U.S. has been a <strong>continuing concern</strong>, 
+            The <strong>education debt</strong> has been a <strong>continuing concern</strong> for students in the U.S., 
             increasing steadily over the years.
         </ArticleText>
 
