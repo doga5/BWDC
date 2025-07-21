@@ -1,6 +1,4 @@
 <script>
-    // `layout` can be either "right" or "left"
-    // `sticky` and `scrolly` are the snippets passed in (see one of the examples)
     let { layout, sticky, scrolly } = $props(); 
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">

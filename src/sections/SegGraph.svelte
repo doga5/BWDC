@@ -18,10 +18,10 @@
             const elem = entry.target;
 
             if (entry.intersectionRatio >= 0.9) {
-                // "active" state
+                
                 elem.style.opacity = 1;
             } else if (entry.intersectionRatio < 0.9) {
-                // "inactive" state
+                
                 elem.style.opacity = 0.25;
             }
         });
