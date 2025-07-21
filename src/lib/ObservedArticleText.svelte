@@ -1,18 +1,13 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 <script>
     import { onMount } from "svelte";
 
     let { children, callback, options } = $props();
-
-    // this uniqueId just lets us target the element 
-    // with `document.getElementById(uniqueId)` later on.
-    // it's a little hacky, but it works. 
     let uniqueId = Math.random().toString();
 
-    // here we define the onMount() function for this component.
-    // svelte handles calling the onMount() function *after* all of the HTML in this
-    // component has been mounted to the DOM. we have to put the intersection observer
-    // stuff in onMount() because we need to target the <div> we create below,
-    // but it won't actually exist in the DOM until it's been mounted. 
     onMount(() => {
         let intersectionObserver = new IntersectionObserver(callback, options);
 
@@ -35,6 +30,9 @@
         background-color: #f8edf2;
         color: #23000f;
         padding: 20px;
+        font-family: "Tomorrow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
         
     }
 </style>

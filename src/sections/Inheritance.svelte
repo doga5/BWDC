@@ -7,7 +7,7 @@
   import ArticleText from "../lib/ArticleText.svelte";
 
   const pieOptions1: Options = {
-    chart: { type: "pie", backgroundColor: "transparent" },
+    chart: { type: "pie", backgroundColor: "#540023" },
     title: { 
       text: "Black" ,
     style: {
@@ -31,7 +31,7 @@
   };
 
   const pieOptions2: Options = {
-    chart: { type: "pie", backgroundColor: "transparent" },
+    chart: { type: "pie", backgroundColor: "#540023" },
     title: { 
       text: "Hispanic",
       style: {
@@ -57,7 +57,7 @@
   };
 
   const pieOptions3: Options = {
-    chart: { type: "pie", backgroundColor: "transparent" },
+    chart: { type: "pie", backgroundColor: "#540023" },
     title: { 
       text: "White" ,
     style: {

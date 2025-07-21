@@ -3,7 +3,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <div class="title-card">
   <div class="content">
@@ -11,68 +11,63 @@
     <h1>{title}</h1>
     <p>By <strong class="name"> <a href="https://www.linkedin.com/in/do%C4%9Fa-%C3%B6yk%C3%BC-oru%C3%A7-12762423b/">Doga Oyku Oruc</a></strong></p>
   </div>
-  <img class="duck-img" src="duck.png" alt="KWK rubber duck!" />
+  <img class="Illustration" src="Illustration.png" alt="My own illustration!" />
 </div>
 
 <style>
   .title-card {
     background-color: #540023;
-    height: 130vh;
+    height: 180vh;
     display: flex;
     justify-content: left;
     align-items: left;
     text-align: left;
-    padding: 2.5rem;
+    padding: 2rem;
+    padding-bottom: 20vh;
     box-sizing: border-box;
-    font-family: "Geo", sans-serif;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
     font-style: normal;
   }
-  .duck-img {
+  .Illustration {
     position: absolute;
+    top: 5vh;
     bottom: 0;
     right: 0;
-    width: 20rem;
+    width: 30rem;
     height: auto;
-    opacity: 0.1;
+    opacity: 0.9;
   }
-  .duck-img:hover {
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
-  }
-  .duck-img:active {
-    opacity: 0.8;
-    transition: opacity 0.1s ease-in-out;
-  }
-  .duck-img:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #F0BF56;
-  }
+  
+  
   .content {
-    max-width: 900px;
+    max-width: 1000px;
     background-color: #540023;
     padding: 2rem;
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     margin: 0;
     box-sizing: border-box;
     width: 10%;
-    color: #F0BF56;
+    color: #F0BF56;;
     padding-bottom: 2rem;
-    max-width: 700px;
-    font-family: "Jersey 15", sans-serif;
+    max-width: 200px;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   }
 
   p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #f7f5eb;
-    margin-top: 0.5rem;
+    margin-top: 0;
   }
   .name {
     border-bottom: #F0BF56 2px solid;
     padding-top: 10rem;
-    font-weight: bold;
+    font-weight: 600;
   }
   .name a {
     color: inherit;

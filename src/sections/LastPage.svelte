@@ -39,6 +39,7 @@
         color: #540023;
         font-family: "Courier New", Courier, monospace;
         font-size: 1.5em;
+        font-weight: 600;
         bottom: 0;
         width: 100%;
     }
@@ -46,5 +47,6 @@
         color: #540023;
         text-decoration: none;
         margin-left: 10px;
+        padding-top: 10rem;
     }
 </style>
