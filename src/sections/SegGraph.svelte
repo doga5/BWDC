@@ -81,7 +81,7 @@
 
         {#snippet scrolly()}
             <ObservedArticleText callback={removeDuckCallback} {options}>
-                A study conducted by <strong>NBER</strong> further investigated the <strong>occupational segregation by race and education</strong> over time.
+                A study conducted by <strong> <a href="https://www.nber.org/papers/w31641">NBER</a></strong> further investigated the <strong>occupational segregation by race and education</strong> over time.
                 They examined whether occupational segregation between Black and White workers is <strong>similar in magnitude</strong> among
                 workers with a Bachelor’s degree as it is among workers who do not have a Bachelor’s degree.
                 <br />

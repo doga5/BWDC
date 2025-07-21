@@ -100,7 +100,7 @@
 
     {#snippet scrolly()}
       <ArticleText>
-        For those who do enroll, family support plays a <strong>crucial role</strong>. Yet <a href="https://blackwealthdata.org/explore/assets"> data </a> shows that Black and Hispanic students are significantly 
+        For those who do enroll, family support plays a <strong>crucial role</strong>. Yet, <a href="https://blackwealthdata.org/explore/assets"> data </a> shows that Black and Hispanic students are significantly 
         <strong>less likely to receive financial</strong> help with tuition compared to their White peers.
       </ArticleText>
       <ArticleText>
@@ -119,7 +119,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  flex-wrap: nonwrap; /* or wrap if you want them to stack on smaller screens */
+  flex-wrap: nonwrap; 
   gap: 0.3rem;
 }
 
